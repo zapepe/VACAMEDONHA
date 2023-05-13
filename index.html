@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VACA MEDONHA</title>
+    <link rel="icon" href="vacamedonha_icon.png">
+    <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+        }
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <img id="vaca" src="vacamedonha.png" alt="*BOOM*" draggable="false">
+    <audio id="medonha" src="somdavacamedonha.mp3" preload="auto"></audio>
+    <!-- Meu pix para doações: 81f7ea4e-5345-4d59-8312-c112712efe2d, deu muito trabalho fazer esse site 😰-->
+</body>
+<script>
+    var vaca = document.getElementById("vaca");
+    var medonha = document.getElementById("medonha");
+  
+    vaca.addEventListener("click", function() {
+        medonha.currentTime = 0;
+        medonha.play();
+    });
+</script>
+</html>
